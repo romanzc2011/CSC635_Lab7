@@ -35,8 +35,8 @@ function Validate()
     first_name = $('first_name').value.trim().toUpperCase();
     last_name = $('last_name').value.trim().toUpperCase();
     student_id = $('student_id').value.trim().toUpperCase();
-    email_address = $('email_address').value.trim();
-    mac_address = $('rpi_mac_address').value.trim();
+    email_address = $('email_address').value.trim() // MAC addresses are case sensitive, no default toUpperCase;
+    mac_address = $('rpi_mac_address').value.trim() // No default toUpperCase;
 
     // Some short hand if/else present to save space
     // For validate to be successful no false should be present in form_boolean
